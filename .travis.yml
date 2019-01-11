@@ -1,0 +1,27 @@
+---
+language: php
+php:
+  - '7.2'
+before_install:
+  - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+  - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+  - sudo apt-get update
+  - sudo apt-get install -y yarn sqlite
+
+before_script:
+#  - composer global require sensiolabs/security-checker
+  - cp .env.dist .env
+  - curl -L -o phpstan.phar https://github.com/phpstan/phpstan/releases/download/0.10.1/phpstan.phar
+  - curl -L -o php-cs-fixer.phar https://cs.sensiolabs.org/download/php-cs-fixer-v2.phar
+  - composer install
+
+script:
+  - php phpstan.phar analyze -l7 ./src
+  - php php-cs-fixer.phar fix --dry-run
+  - php ./bin/console doctrine:database:create --env=test -n
+  - php ./bin/console doctrine:schema:create --env=test -n
+  - php ./bin/phpunit
+
+notifications:
+  email:
+    - entengelb@gmail.com

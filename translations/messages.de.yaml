@@ -1,0 +1,123 @@
+import:
+  game.title: Spiel importieren
+  already_imported:
+    title: Dieses Spiel wurde bereits importiert
+    notice: Dieses Spiel wurde bereits importiert
+    link_to_game: Zum Spiel
+  list:
+    title: Noch zu importierende Spiele
+    link_to_import: Importiere dieses Spiel
+    no_pgns: Keine zu importierenden Spiele vorhanden.
+    delete_pgn: "[x]"
+  pgn.title: PGN importieren
+
+game.list:
+  title: Alle Spiele
+  no_games: Keine Spiele vorhanden
+  won.title: gewonnen
+  lost.title: verloren
+  draw.title: remis
+  unfinished.title: laufend
+
+game.view:
+  event: Ereignis
+  site: Ort
+  date: Datum
+  round: Runde
+  white: Weiß
+  black: Schwarz
+  result: Ergebnis
+  moves: Züge
+
+leaderboard.show:
+  title: Bestenliste
+  table.head:
+    player: Spieler
+    games: gespielt
+    won: gewonnen
+    lost: verloren
+    draw: remis
+
+player:
+  list.title: Spieler
+  show.title: "Profile von %player%"
+  versus.title: "Spiele von %player1% gegen %player2%"
+
+nav:
+  home: Starseite
+  login: Anmelden
+  register: Registieren
+  import_pgn: Importiere PGN
+  import_dropbox: Von Dropbox
+  game_list:  Spiele
+  import_list: Unfertige Imports
+  logout: Abmelden
+  profile: Mein Profil
+  user_list: Spieler
+  leaderboard: Bestenliste
+  registrations: Registrierungen
+
+user:
+  login.title: Melde Dich an
+  profile.title: Profil
+
+form:
+  game.label:
+    game: Spiel
+    event: Ereignis
+    site: Ort
+    date: Datum
+    round: Runde
+    white: Weiß
+    black: Schwarz
+    result: Ergebnis
+    moves: Züge
+    submit: Speichern
+  import_pgn.label:
+    pgn_string: PGN
+    submit: Importieren
+  login.label:
+    username: Nutzername
+    password: Passwort
+    submit: Anmelden
+  profile.label:
+    submit: Speichern
+    username: Nutzername
+    email: Email Addresse
+    password:
+      first: Passwort
+      second: Wiederhole Passwort
+  register.label:
+    email: Email Addresse
+    username: Nutzername
+    submit: Registrieren
+    password:
+      first: Passwort
+      second: Wiederhole Passwort
+  admin.label:
+    submit: Speichern
+
+dropbox:
+  import.title: Importiere PGN von Dropbox
+  list:
+    title: Importiere von Dropbox
+    to_import.title: PGNs zum importieren
+    imported.title: Noch nicht abgeschlossene Imports
+
+error:
+  404:
+    title: 404 - Nichts gefunden
+    text: Kein Inhalt gefunden. Sicher, dass Du hier richtig bist?
+  all:
+    title: Fehler
+    text: Es ist ein Fehler passiert. Dafür kannst Du nichts. Aber das ist jetzt halt so.
+
+admin:
+  registrations:
+    title: Registrierungen
+
+pgn.piece_names: '{"k": "K", "q": "D", "b": "L", "n": "S", "r": "T", "p": ""}'
+
+header:
+  title:
+    default: Willkommen!

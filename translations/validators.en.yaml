@@ -1,0 +1,29 @@
+user:
+  username:
+    unique: This username already exists.
+    not_blank: You have to enter a username.
+  password:
+    not_blank: You have to enter a password.
+    max_length: Respect if you can remember that. But you are allowed to enter only 4096 characters.
+    repeated: The password fields must match.
+  email:
+    unique: The email address already exists.
+    not_blank: You have to enter an email address.
+    invalid: You must enter a valid email address.
+
+game:
+  event.not_blank: You have to enter the event.
+  site.not_blank: You have to enter the place.
+  date.not_blank: You have to enter the date.
+  round.not_blank: You have to enter the round.
+  white.not_blank: You have to enter the white player name.
+  black.not_blank: You have to enter the black player name.
+  result:
+    not_blank: You have to enter the result.
+    choice: You have to enter a valid result. (1-0, 0-1, 1/2-1/2, *)
+  moves.not_blank: You have to enter the moves.
+
+import:
+  pgn:
+    not_blank: You have to add a PGN file.
+    invalid: This is not a valid PGN file.

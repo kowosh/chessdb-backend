@@ -1,0 +1,43 @@
+user:
+  username:
+    unique: Diesen Nutzername gibt es schon.
+    not_blank: Du musst einen Nutzernamen eingeben.
+  password:
+    not_blank: Du musst ein Passwort eingeben.
+    max_length: Respekt wenn Du Dir das merken kannst. Aber du darfst leider nur 4096 Zeichen eingeben.
+    repeated: Die Passwörter stimmen nicht überein.
+  email:
+    unique: Diese Email Addresse gibt es schon.
+    not_blank: Du musst eine Email Adresse eingeben.
+    invalid: Du musst eine gültige Email Adresse eingeben.
+
+game:
+  event.not_blank: Du musst das Ereignis eingeben.
+  site.not_blank: Du musst den Ort eingeben.
+  date.not_blank: Du musst das Datum eingeben.
+  round.not_blank: Du musst die Runde eingeben.
+  white.not_blank: Du musst den weißen Spielernamen eingeben.
+  black.not_blank: Du musst den schwarzen Spielernamen eingeben.
+  result:
+    not_blank: Du musst das Ergebnis eingeben.
+    choice: Du musst ein gültiges Ergebnis eingeben. (1-0, 0-1, 1/2-1/2, *)
+  moves.not_blank: Du musst die Züge eingeben.
+
+import:
+  pgn:
+    not_blank: Du musst eine PGN Datei hinzufügen.
+    invalid: Das ist keine gültige PGN Datei.
+
+user_registration:
+  username:
+    length: Bitte gib mindestens 6 Zeichen als Nutzernamen ein.
+    unique: Diesen Nutzername gibt es schon.
+    not_blank: Du musst einen Nutzernamen eingeben.
+  plain_password:
+    not_blank: Du musst ein Passwort eingeben.
+    length: Respekt wenn Du Dir das merken kannst. Aber du darfst leider nur 4096 Zeichen eingeben.
+    repeated: Die Passwörter stimmen nicht überein.
+  email:
+    unique: Diese Email Addresse gibt es schon.
+    not_blank: Du musst eine Email Adresse eingeben.
+    invalid: Du musst eine gültige Email Adresse eingeben.
